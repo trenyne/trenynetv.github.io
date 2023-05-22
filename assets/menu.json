@@ -1,0 +1,83 @@
+{
+    "id": "menu_id",
+    "type": "menu",
+    "display": true,
+    "enable": false,
+    "focus": false,
+    "reuse": true,
+    "style": "overlay",
+    "execute": false,
+    "important": true,
+    "transparent": 2,
+    "icon": "blank",
+    
+    "label": "Item Label",
+    "extensionIcon": "blank",
+    "lineColor": "msx-white",
+    "data": null,
+   "headline": "Shhh Playlist",
+	"color":"msx-black-soft",
+   "ready": {
+      "action":"invalidate:content:flag:{tabs} |content{asset:content:first.json}"
+      
+      },
+   "menu": [
+        {
+         "label": "Shhh Playlist",
+         "type": "separator"
+        },
+
+        {
+         "icon": "home",
+         "label": "Web Sites",
+         "extensionLabel": "www.",
+         "data":"{asset:content:first.json}"
+	    },
+
+        {
+         "icon": "home",
+         "label": "Web Sites",
+         "extensionLabel": "www.",
+         "data":"{asset:content:links.json}"
+	    },
+      	{
+         "icon": "movie",
+         "label": "Videos",
+         "extensionLabel": "videos",
+        	"data":""{asset:content:tagsButton.json}"
+		},
+
+      	{
+         "icon": "movie",
+         "label": "Playlist",
+         "extensionLabel": "shhh",
+         "playlist":"data",
+		"data":"{asset:content:playlist.json}"
+		},
+
+      	{
+         "icon": "movie",
+         "label": "Tags",
+         "extensionLabel": "shhh",  
+		"data": "{asset:content:tagsButton.json}"
+		},
+      	{
+         "icon": "help",
+         "label": "Shortcuts",
+         "extensionLabel":  "urls",
+         "data":"{asset:content:shortcuts.json}"
+		},
+		{
+		"type":"settings"
+		},
+		{
+         "icon": "change-circle",
+         "label": "Reload",
+         "data":"{asset:content:data.json}"
+		}
+    ]
+}
+
+
+
+ 
