@@ -1,0 +1,27 @@
+
+
+ {
+   "type": "list",
+   "headline": "Template",
+ 
+   "ready":{
+
+            "action": "menu:https://trenyne.github.io/assets/first.json"
+
+},
+   "pages": [{     
+         "items": [
+            {
+               "type": "overlay",
+               "layout": "0,0,3,3",
+               "icon": "web-asset",
+               "badge": "Crazy!",
+               "color": "msx-red",   
+               "alignment": "right|badge-right",
+               "label": "Crazy Sites",
+               "action": "https://trenyne.github.io/assets/first.json",
+               "data":null
+			}]
+      }
+   ]
+}

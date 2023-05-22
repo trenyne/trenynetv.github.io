@@ -1,0 +1,64 @@
+{
+    "type": "list",
+    "headline": "Tabs",
+    "preload": "next",
+    "flag": "tabs",
+    "header": {
+        "offset": "0,0,0,0.25",
+        "items": [{
+                "type": "space",
+                "layout": "0,0,12,3",
+                "offset": "-1.25,-1,2,1",
+                "color": "msx-glass",
+                "image": "https://picsum.photos/seed/msx_665e1e1c_bg/1992/552",
+                "imageFiller": "cover",
+                "imageOverlay": 4
+            }, {
+
+                "type": "space",
+                "layout": "0,1,12,1",
+                "offset": "-1.25,1,2,0",
+                "color": "msx-black-soft"
+            }, {
+                "type": "default",
+                "layout": "0,2,3,1",
+                "focus": true,
+                "color": "msx-white-soft",
+                "label": "{col:msx-black}Web Sites", 
+                "action": "replace:content:tabs:{asset:content:links.json}"
+            }, {
+                "type": "default",
+                "layout": "3,2,3,1",
+                "color": "transparent",
+                "label": "Second Section",
+                "action": "replace:content:tabs:http://msx.benzac.de/info/xp/data/hidden_feature_15_section2.json"
+            }, {
+                "type": "default",
+                "layout": "6,2,3,1",
+                "color": "transparent",
+                "label": "Third Section",
+                "action": "replace:content:tabs:http://msx.benzac.de/info/xp/data/hidden_feature_15_section3.json"
+            }, {
+                "type": "default",
+                "layout": "9,2,3,1",
+                "color": "transparent",
+                "label": "Fourth Section",
+                "action": "replace:content:tabs:http://msx.benzac.de/info/xp/data/hidden_feature_15_section4.json"
+            }]
+    }
+    {
+        "type": "list",
+    "headline": "Interaction Plugin Test",
+      "data":"content:{asset:content:playlist.json}",
+    "template": {
+        "type": "separate",
+        "layout": "0,0,2,4",
+        "icon": "msx-white-soft:gamepad",
+        "color": "msx-glass"
+    }
+
+  
+ 
+}
+
+}
