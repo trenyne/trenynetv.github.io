@@ -1,0 +1,6 @@
+{    
+    "name": "Shhhh",
+    "version": "1.0.0",
+    "parameter": "menu:{asset:menu:menu.json}",
+    " ?welcome": "none"
+}
