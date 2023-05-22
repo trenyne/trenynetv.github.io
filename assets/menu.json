@@ -1,0 +1,83 @@
+{
+    "id": "menu_id",
+    "type": "menu",
+    "display": true,
+    "enable": false,
+    "focus": false,
+    "reuse": true,
+    "style": "overlay",
+    "execute": false,
+    "important": true,
+    "transparent": 2,
+    "icon": "blank",
+    
+    "label": "Item Label",
+    "extensionIcon": "blank",
+    "lineColor": "msx-white",
+    "data": null,
+   "headline": "Shhh Playlist",
+	"color":"msx-black-soft",
+   "ready": {
+      "action":"invalidate:content: |:https://trenyne.github.io/assets/first.json"
+      
+      },
+   "menu": [
+        {
+         "label": "Shhh Playlist",
+         "type": "separator"
+        },
+
+        {
+         "icon": "home",
+         "label": "Web Sites",
+         "extensionLabel": "www.",
+         "data":"https://trenyne.github.io/assets/first.json}"
+	    },
+
+        {
+         "icon": "home",
+         "label": "Web Sites",
+         "extensionLabel": "www.",
+         "data":"https://trenyne.github.io/assets/links.json"
+	    },
+      	{
+         "icon": "movie",
+         "label": "Videos",
+         "extensionLabel": "videos",
+        	"data":"https://trenyne.github.io/assets/content.json"
+		},
+
+      	{
+         "icon": "movie",
+         "label": "Playlist",
+         "extensionLabel": "shhh",
+         "playlist":"data",
+		"data":"https://trenyne.github.io/assets/playlist.json"
+		},
+
+      	{
+         "icon": "movie",
+         "label": "Tags",
+         "extensionLabel": "shhh",  
+		"data": "https://trenyne.github.io/assets/tags.json}"
+		},
+      	{
+         "icon": "help",
+         "label": "Shortcuts",
+         "extensionLabel":  "urls",
+         "data":"https://trenyne.github.io/assets/shortcuts.json"
+		},
+		{
+		"type":"settings"
+		},
+		{
+         "icon": "change-circle",
+         "label": "Reload",
+         "data":"https://trenyne.github.io/assets/data.json"
+		}
+    ]
+}
+
+
+
+ 

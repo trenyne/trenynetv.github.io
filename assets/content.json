@@ -1,0 +1,73 @@
+{
+    "type": "list",
+    "headline": "Backdrop Plugin Test",
+    "transparent": 2,
+    "preload": "next",
+    "underlay": {
+        "action": "[quiet|delay:backdrop:1:interaction:load:http://msx.benzac.de/interaction/backdrop.html]",
+        "data": {               
+            "url": "none"
+        },
+        "items": [{
+                "id": "text",
+                "type": "space",
+                "layout": "0,0,6,3",
+                "headline": "",
+                "text": ""
+            }]
+    },
+    "template": {
+        "type": "default",
+        "layout": "0,0,2,3",
+        "area": "0,3,12,3",
+        "wrapperColor": "msx-glass",
+        "imageHeight": 1.83,
+        "color": "msx-glass",
+        "imageFiller": "cover",
+        "truncation": "titleHeader|titleFooter",
+        "titleHeader": "",
+        "titleFooter": "",
+        "description": "No description available.",
+        "backdrop": "none",
+        "image": "none",
+        "selection": {
+            "important": true,
+            "action": "data",
+             "data": {
+                "actions": [{
+                        "action": "invalidate:content:underlay:text"
+                    }, {
+                        "action": "delay:text:1:update:content:underlay:text",
+                        "data": {
+                            "headline": "{context:titleHeader}",
+                            "text": "{context:titleFooter}{br}{br}{context:description}"
+                        }
+                    }, {
+                        "action": "delay:backdrop:1:interaction:load:http://msx.benzac.de/interaction/backdrop.html",
+                        "data": {
+                            "url": "{context:backdrop}",
+                            "type": 1
+                        }
+                    }]
+            }
+        },
+        "properties": {
+            "image:extension": "| {context:titleHeader}"
+        }
+    }
+    "items": [
+
+     {
+         "badge": "www.pornhub.com",
+         "text": "Jules Jordan - Swarmed By 13 Guys Angela White's Biggest Blowbang Ever",
+         "action": "video:",
+         "image":"https://ei.phncdn.com/videos/201912/09/267468262/original/(m=qU-Z9_UbeaAaGwObaaaa)(mh=gyI_vl2FJONpynzc)0.jpg",
+         "backdrop":"https://ei.phncdn.com/videos/201912/09/267468262/original/(m=qU-Z9_UbeaAaGwObaaaa)(mh=gyI_vl2FJONpynzc)0.jpg",
+            "titleHeader": "{col:msx-white}Shhh",
+            "titleFooter": "www.pornhub.com",
+        "description": "Watch Jules Jordan - Swarmed By 13 Guys Angela White's Biggest Blowbang Ever on Pornhub.com, the best hardcore porn site. Pornhub is home to the widest selection of free Babe sex videos full of the hottest pornstars. If you're craving australian XXX movies you'll find them here."
+         
+}
+
+]
+}
